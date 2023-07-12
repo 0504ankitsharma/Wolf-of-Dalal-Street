@@ -23,7 +23,7 @@ html , body {
 #cursor-blur {
     height: 400px;
     width: 400px;
-    background-color:#0671eb26 ;
+    background-color:#0671eb47 ;
     border-radius: 50%;
     position: fixed;
     filter: blur(50px);

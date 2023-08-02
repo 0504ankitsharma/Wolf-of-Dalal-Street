@@ -32,23 +32,32 @@ html , body {
 }
 
 #nav {
-    height: 130px;
+    height: 100px;
     width: 100%;
    /* background-color: red; */
     display: flex;
     align-items: center;
-    padding: 0 150px;
-    justify-content: flex-start;
-    gap: 40px;
+    padding: 0 22px;
+    justify-content: space-between;
     position: fixed;
     z-index: 99;
     
-   
-    
+}
+
+.nav-2 {
+    display: flex;
+    gap: 3vw;
+
+}
+
+.nav-2 h2 {
+    color: whitesmoke;
+    font-size: 21px;
 }
 
 #nav img {
-    height: 180px;
+    height: 140px;
+    margin-right: 350px;
     
 }
 
@@ -71,7 +80,7 @@ video{
 
 #main{
     position: relative;
-    background-color: rgb(0,0,0,0.3);
+    background-color: rgb(0,0,0,0.6);
 
 }
 
@@ -87,13 +96,14 @@ video{
 }
 
 #page1 h1 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #page1 h1::before{
-    content: "Wolf of Dalal Street";
+    content: "WOLF of DALAL STREET";
     position: absolute;
     color: black;
     top: -4px;
@@ -109,6 +119,9 @@ video{
     font-weight: 500;
     width: 60%;
     margin-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 0.1px;
+    letter-spacing: 0.1px;
 }
 
 #page2 {
@@ -139,14 +152,17 @@ video{
 }
 
 #speaker-in h3{
-    font-size: 45px;
-    font-weight: 900;
-    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: violet;
 }
 
 #speaker-in p{
-    font-size: 20px;
+    font-size: 15px;
     line-height: 20px;
+    word-spacing: 0.1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -173,10 +189,169 @@ video{
 }
 
 #card2{
-    background-image: url(assets/card-2.JPG);
+    background-image: url(assets/card-2.jpg);
 }
 
 #card3{
     background-image: url(assets/card-3.JPG);
 }
+
+
+/* Default styles for larger screens */
+/* Add your existing CSS code here */
+
+/* Media query for screens with a maximum width of 768px (typical for mobile phones) */
+@media only screen and (max-width: 768px) {
+    /* Adjust the styles for smaller screens here */
+
+    video {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+        #cursor,
+  #cursor-blur {
+    display: none;
+  }
+  
+    /* Navigation bar styles for mobile */
+    #nav {
+      height: 60px;
+      padding: 0 10px;
+    }
+  
+    /* Logo styles for mobile */
+    #nav img {
+      height: 80px;
+      margin-right: 20px;
+    }
+  
+    /* Heading styles for mobile */
+    #page1 h1 {
+      font-size: 36px;
+    }
+  
+    /* Paragraph styles for mobile */
+    #page1 p {
+      font-size: 16px;
+      width: 80%;
+    }
+  
+ 
+  
+    /* Card styles for mobile */
+    .card {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media query for screens with a maximum width of 600px (smaller mobile devices) */
+  @media only screen and (max-width: 600px) {
+    /* Adjust the styles for smaller screens here */
+  
+    /* Navigation bar styles for smaller mobile devices */
+    #nav {
+      height: 50px;
+      padding: 0 5px;
+    }
+    
+
+    .nav-2 h2{
+        font-size: 10px;
+        padding: 0 14px;
+    }
+  
+    /* Logo styles for smaller mobile devices */
+    #nav img {
+      height: 60px;
+      margin-right: 10px;
+    }
+  
+    /* Heading styles for smaller mobile devices */
+    #page1 h1 {
+      font-size: 50px;
+    }
+  
+    /* Paragraph styles for smaller mobile devices */
+    #page1 p {
+      font-size: 28px;
+      width: 90%;
+    }
+  
+  
+    /* Card styles for smaller mobile devices */
+    .card {
+     display: none;
+    }
+  }
+
+  /* Default styles for larger screens */
+/* Add your existing CSS code here */
+
+/* Media query for screens with a maximum width of 600px (smaller mobile devices) */
+@media only screen and (max-width: 600px) {
+    /* Adjust the styles for smaller screens here */
+  
+    /* Speaker section styles for smaller mobile devices */
+    #speaker {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    /* Image wds.speaker.wds.png style for smaller mobile devices */
+    #speaker img:first-child {
+      height: 200px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+  
+    /* Speaker-in div styles for smaller mobile devices */
+    #speaker-in {
+      text-align: center;
+    }
+  
+    /* Center the speaker-in content */
+    #speaker-in h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      font-weight: 100;
+    }
+  
+    #speaker-in p {
+      font-size: 6px;
+      line-height: 10px;
+    }
+  
+    /* Image wds.speaker.png style for smaller mobile devices */
+    #speaker img:last-child {
+      height: 200px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+ 
+  
+
+
+      
+  
+  
+  
+  
+
 

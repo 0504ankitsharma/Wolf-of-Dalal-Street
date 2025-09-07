@@ -11,6 +11,10 @@ html , body {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #cursor {
     height: 20px;
     width: 20px;
@@ -50,9 +54,15 @@ html , body {
 
 }
 
-.nav-2 h2 {
+.nav-2 a {
     color: whitesmoke;
     font-size: 21px;
+    text-decoration: none;
+}
+
+.nav-2 a:focus-visible {
+    outline: 2px solid #0671eb;
+    outline-offset: 2px;
 }
 
 #nav img {
@@ -151,7 +161,7 @@ video{
     text-align: center;
 }
 
-#speaker-in h3{
+#speaker-in h2{
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 25px;
@@ -267,9 +277,9 @@ video{
     }
     
 
-    .nav-2 h2{
-        font-size: 10px;
-        padding: 0 14px;
+    .nav-2 a{
+        font-size: 12px;
+        padding: 0 12px;
     }
   
     /* Logo styles for smaller mobile devices */
@@ -280,12 +290,12 @@ video{
   
     /* Heading styles for smaller mobile devices */
     #page1 h1 {
-      font-size: 50px;
+      font-size: 32px;
     }
   
     /* Paragraph styles for smaller mobile devices */
     #page1 p {
-      font-size: 28px;
+      font-size: 14px;
       width: 90%;
     }
   
@@ -324,10 +334,10 @@ video{
     }
   
     /* Center the speaker-in content */
-    #speaker-in h3 {
-      font-size: 16px;
-      margin-bottom: 15px;
-      font-weight: 100;
+    #speaker-in h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 700;
     }
   
     #speaker-in p {
@@ -355,3 +365,10 @@ video{
   
 
 
+
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  #cursor, #cursor-blur { display: none; }
+}

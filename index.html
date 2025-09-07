@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wolf of Dalal Street by ECON Club TIET – experience the world of stocks, equity, and finance with a keynote speaker session.">
+    <meta name="theme-color" content="#000000">
     <title>Wolf of Dalal Street</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,33 +14,33 @@
 
 </head>
 <body>
-    <div id="nav">
-   <div class="h1"></div> <a href="https://econtiet.on.fleek.co/"> <img src="assets/logo1.png" alt="logo"> </a> 
-      <div class="nav-2">
-      <h2>WOLF of DALAL STREET</h2>
-      <h2>SPEAKER</h2>
-      <h2>CONTACT US</h2>
-      </div>
-    </div>
+    <header id="nav" role="banner">
+   <div class="h1"></div> <a href="https://econtiet.on.fleek.co/" aria-label="ECON TIET website"> <img src="assets/logo1.png" alt="ECON TIET logo"> </a> 
+      <nav class="nav-2" aria-label="Primary">
+      <a href="#page1" class="nav-link" aria-current="page">WOLF of DALAL STREET</a>
+      <a href="#speaker" class="nav-link">SPEAKER</a>
+      <a href="#contact" class="nav-link">CONTACT US</a>
+      </nav>
+    </header>
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
-    <video autoplay loop muted  src="assets/background.mp4"></video>
-    <div id="main">
-        <div id="page1">
-            <h1>WOLF of DALAL STREET</h1>
+    <video autoplay loop muted playsinline aria-hidden="true" src="assets/background.mp4"></video>
+    <main id="main" role="main">
+        <section id="page1" aria-labelledby="hero-title">
+            <h1 id="hero-title">WOLF of DALAL STREET</h1>
             <p>The Wolf of Dalal Street , organized by the ECON club , aims to provide students of TIET with an enthralling experience that enables them to immerse themselves in the captivating world of shares, stocks, and equity. This event offers an exceptional opportunity for participants to gain practical insights into the intricate workings of the stock market, while honing their decision-making skills and financial acumen.</p>
-        </div>
+        </section>
         
-        <div id="page2">
+        <section id="page2" aria-label="About and Speaker">
              <div id="speaker">
-                <img src="assets/speaker.wds.png" alt="wds">
+                <img src="assets/speaker.wds.png" alt="Finance-themed graphic">
                 <div id="speaker-in">
-                    <h3>SPEAKER-SESSION</h3>
+                    <h2>SPEAKER SESSION</h2>
                     <p>“The key to making money in stocks is not to get scared out of them. “– Peter Lynch
                         If you are an avid fanatic of the world of finance and trading and want to add new skills to your repertoire, then the ECON club is here to the rescue! All fans of fintech are invited to take advantage of our speaker session to broaden their horizons and acquire life-changing experiences! The journey from being a finance freak to becoming a finance guru giving such education free of cost, simplifying every financial term, making people financially independent, informing about discount schemes. He is one of India's leading finance influencers living a dream life.
                         Our key speaker ANMOL SHARMA(financebyanmol) - founder of FINLIGHT. He's one of India's leading finance educators and also an entrepreneur coming to TIET to share his learnings! is an inspiration to each one of us, and it's our pleasure to have him enlighten us with his deep knowledge of finance.</p>
                 </div>
-                <img src="assets/wds.speaker.png" alt="speaker">
+                <img src="assets/wds.speaker.png" alt="Keynote speaker portrait">
              </div>
 
              <div id="cards-container">
@@ -48,8 +50,12 @@
              </div>
 
            
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer id="contact" role="contentinfo">
+      <p>Contact ECON Club TIET • <a href="mailto:contact@econtiet.org">contact@econtiet.org</a></p>
+    </footer>
 
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

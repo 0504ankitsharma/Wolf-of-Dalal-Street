@@ -42,14 +42,4 @@ script.js         # Interactions and animations
 - Images include `alt` text
 - Video is muted, looped, and optimized for background usage
 
-### Deployment
-The site is static and can be deployed to any static hosting provider (GitHub Pages, Netlify, Vercel, Cloudflare Pages, etc.).
-
-### Development Notes
-- Ensure GSAP and ScrollTrigger CDNs are available. If hosting offline, bundle them locally or via a build step.
-- Large videos can be heavy. Consider transcoding the background to an efficient codec and keeping its resolution reasonable.
-
-### License
-MIT
-
 
